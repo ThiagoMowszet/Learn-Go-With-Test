@@ -6,17 +6,17 @@ import (
 )
 
 func TestAdder(t *testing.T) {
-    sum := Add(2,2)
-    expected := 4
+	sum := Add(2, 2)
+	expected := 4
 
-    if sum != expected {
-        t.Errorf("\nExpected = %d\nSum = %d", expected, sum)
-    }
+	if sum != expected {
+		t.Errorf("\nExpected = %d\nSum = %d", expected, sum)
+	}
 
 }
 
 func ExampleAdd() {
-    sum := Add(1,5)
-    fmt.Println(sum)
-    // Output: 6
+	sum := Add(1, 5)
+	fmt.Println(sum)
+	// Output: 6
 }
